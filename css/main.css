@@ -8,9 +8,63 @@ html {
   font-family: Overpass, sans-serif;
   line-height: 1.5;
   background-color: #ff9500;
+  background-image: linear-gradient(to bottom, #ff9500, #ff5e3a);
   color: #fff;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  text-align: center;
+}
+
+ul p {
+  text-align: left;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 a {
+  border: 2px solid #fff;
+}
+
+svg {
+  width: 8rem;
+  height: 8rem;
+  fill: rgba(255, 255, 255, .7);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+@media only screen and (min-width: @38em) {
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
 }
