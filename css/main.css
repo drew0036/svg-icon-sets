@@ -20,15 +20,16 @@ body {
   margin: 0;
 }
 
-ul {
-  padding: 0;
-  text-align: center;
+section {
+  margin: 1rem;
 }
 
-ul p {
-  text-align: left;
-  padding-bottom: 1rem;
-  margin: 0;
+ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 6vmin;
+  padding: 0;
+  text-align: center;
 }
 
 h1 {
@@ -39,11 +40,18 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  margin: 1rem 0;
+}
+
+ul p {
+  text-align: left;
+  margin: 0  0 1rem;
+  font-size: 1.125rem;
 }
 
 h3 a {
   border: 2px solid #fff;
+  margin: 1rem 0;
+  padding: 1rem;
 }
 
 a {
@@ -51,30 +59,32 @@ a {
   font-size: 1.125rem;
   text-decoration: none;
   font-weight: normal;
-  padding: 1rem;
 }
 
 svg {
   width: 8rem;
   height: 8rem;
-  fill: currentColor;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
+  fill: #fff;
 }
 
 li {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 38em) {
 
-  section {
+  ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: left;
+  }
+
+  h3 a {
+    display: flex;
+    padding: .5rem;
   }
 
   h3 a:hover {
